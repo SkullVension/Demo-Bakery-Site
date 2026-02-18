@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Golden Crust DEMO</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Handmade with Heart, Baked with Soul.</h1>
+      <p>Small-batch artisan breads and pastries delivered fresh to your neighborhood.[ ITS A DEMO BAKERY SITE</p>
+      <button id="viewBakeBtn">View Today's Bake</button>
+      <div class="status" id="status"></div>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="details">
+    <div class="detail-card">
+      <h3>24-Hour Fermentation</h3>
+      <p>Slow fermentation makes our bread easier to digest and richer in flavor.</p>
+    </div>
+    <div class="detail-card">
+      <h3>Local Ingredients</h3>
+      <p>We source our flour from nearby farms that use traditional milling methods.</p>
+    </div>
+    <div class="detail-card">
+      <h3>No Preservatives</h3>
+      <p>Only flour, water, salt, and love — nothing artificial.</p>
+    </div>
+  </section>
+
+  <!-- DAILY BAKE -->
+  <section class="bake" id="bake">
+    <h2>Today's Bake Schedule</h2>
+    <ul>
+      <li><strong>8:00 AM</strong> — Classic Sourdough & Baguettes</li>
+      <li><strong>9:30 AM</strong> — Cardamom Buns & Croissants</li>
+      <li><strong>11:00 AM</strong> — Focaccia & Specialty Loaves</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-info">
+      <h2>Find Us</h2>
+      <p><strong>Address:</strong> 123 Baker’s Lane, Flour District</p>
+      <p><strong>Hours:</strong> Tue–Sun: 7am – 3pm</p>
+      <p><strong>Phone:</strong> <a href="tel:+911234567890">+91 12345 67890</a></p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Custom Order Inquiry</h2>
+<form id="whatsappForm">
+  <div class="field">
+    <input type="text" id="name" placeholder="Name" required>
+  </div>
+
+  <div class="field">
+    <input type="email" id="email" placeholder="Email" required>
+  </div>
+
+  <div class="field">
+    <input type="date" id="date" required>
+  </div>
+
+  <div class="field">
+    <textarea id="message" placeholder="Your Message" required></textarea>
+  </div>
+
+  <button type="submit">Send Inquiry</button>
+</form>
+
+
+    </div>
+  </section>
+
+  <!-- STICKY BAR -->
+  <div class="sticky-bar">
+    <a href="tel:+91123456789">📞 Call Now</a>
+    <a href="#contact">📍 Visit Us</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

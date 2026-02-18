@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FCF9F5;
+  font-family: 'Inter', sans-serif;
+  color: #3E2723;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1608198093002-ad4e005484ec') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.hero button {
+  background: #D4A373;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.status {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* DETAILS */
+.details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+  padding: 60px 40px;
+}
+
+.detail-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.detail-card h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+/* BAKE */
+.bake {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.bake h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.bake ul {
+  list-style: none;
+  max-width: 400px;
+  margin: auto;
+  border: 1px solid #A98467;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* CONTACT */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 30px;
+  padding: 60px 40px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.field {
+  position: relative;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #A98467;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.field.valid .icon {
+  opacity: 1;
+}
+
+.contact-form button {
+  background: #D4A373;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* STICKY BAR */
+.sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #3E2723;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.sticky-bar a {
+  color: white;
+  text-decoration: none;
+}/* ===== MOBILE RESPONSIVE FIX FOR THE GOLDEN CRUST ===== */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* DETAILS SECTION */
+  .details {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  .detail-card {
+    padding: 20px;
+  }
+
+  /* BAKE SECTION */
+  .bake {
+    padding: 40px 20px;
+  }
+
+  .bake ul {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+
+  /* CONTACT SECTION */
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form form {
+    gap: 12px;
+  }
+
+  /* FORM FIELDS */
+  .field input,
+  .field textarea {
+    font-size: 1rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  /* STICKY BAR */
+  .sticky-bar {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .sticky-bar a {
+    display: block;
+    text-align: center;
+  }
+
+}
