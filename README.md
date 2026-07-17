@@ -2,7 +2,7 @@
 
 A simple, lightweight web utility project.
 
-**🌐 Live Site:** [portfolio-demo-site](https://portfolio-demo-site.pages.dev/)
+**🌐 Live Site:** [demo-bakery-site](https://demo-bakery-site.pages.dev/)
 
 ---
 
